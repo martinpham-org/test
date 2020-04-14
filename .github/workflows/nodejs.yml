@@ -25,6 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
+    - run: git config --global user.email "nobody@github.com" && git config --global user.name "Github Actions"
     - run: npm run dist
     - run: git log -1
       env:
