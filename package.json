@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "dist": "publisher-prepare && npm run build && mv build dist && publisher",
+    "dist": "publisher-prepare --destination=gh-pages && npm run build && mv build dist && publisher --destination=gh-pages",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
